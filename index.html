@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AJ Ellis CMST 386 Index</title>
-    <link rel="stylesheet" href="/project1/css/styles.css">
+    <title>AJ Ellis - CMST 386 Index</title>
+    <link rel="stylesheet" href="project1/css/styles.css">
+    <meta charset="utf-8">
+    <meta name="keywords" content="CMST 386, AJ Ellis, Home, Projets">
+    <meta name="description" content="The home page for AJ Ellis's CMST 386 projects">
 </head>
 
 <body>
@@ -10,12 +13,31 @@
         <h1>CMST 386 - AJ Ellis</h1>
     </header>
     
-    <ul>
-        <li><a href="/project1/project1.html">Project 1</a></li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-        <li>Project 4</li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="index.html"  class="active">Home</a></li>
+            <li class = "dropdown">
+                <a href="./project1/project1.html">Project 1</a>
+                <div class="dropdown-list">
+                    <a href="./project1/gallery.html">Gallery</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <ul>
+            <li><a href="project1/project1.html">Project 1</a></li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+            <li>Project 4</li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p>This website is created for CMST386.</p>
+        <p>AJ Ellis, 2024</p>
+    </footer>
 </body>
 
 

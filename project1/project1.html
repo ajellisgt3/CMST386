@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AJ Ellis - CMST386 Project 1</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>AJ Ellis - CMST 386 Project 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="keywords" content="CMST 386, AJ Ellis, Project 1, search engines, keywords, links, headings">
+    <meta name="description" content="The main page for AJ Ellis's CMST 386 Project 1">
 </head>
 
 <body>
     <header>
-        <h1>CMST386 - AJ Ellis - Project 1</h1>
+        <h1>CMST 386 - AJ Ellis - Project 1</h1>
     </header>
     
     <nav>
-        
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class = "dropdown">
+                <a href="project1.html" class="active">Project 1</a>
+                <div class="dropdown-list">
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </li>
+        </ul>
     </nav>
     
     <main>
         <h2>Describe how search engines work</h2>
-        <p></p>
+        <p>Search engines typically utilize crawlers, which are automated programs that explore and access websites and then index them by storing data in a large database.  When a search query is entered (by typing something into a search bar), the database is searched using the query.  The engine returns data that is relevant to the query, ranked according to popularity.  To determine relevance of data, a basic solution is to look for pages that include the keywords entered.  Modern search engines, though, use advanced algorithms to look for additional factors, such as website hierarchy and organization.  This is why including relevant keywords in a page title is important for Search Engine Optimization.</p>
         
         <h2>Explain the importance of keywords and descriptions as meta tags</h2>
-        <p></p>
+        <p>Google doesn’t use meta keywords, but it does use the meta description tag.  Descriptions are helpful because they can summarize website content in a way that best matches the query entered by the user.  These descriptions are shown under the website name in the search results; if no description is entered, then the engine will automatically display a relevant snippet of text from the website.</p>
         
         <h2>List the four elements that comprise writing relevant content links</h2>
-        <p></p>
+        <p>First, links should be crawlable by the search engine, which typically means using the <code>&lt;a&gt;</code> HTML element.  Second, the link should include anchor text that is descriptive and uses relevant keywords (without being too long).  Forgoing anchor text can have a negative effect by not giving the crawler relevant information for the search engine.  Third, a website should make use of internal links, meaning it links to its own content on different pages.  This is useful because it helps the search engine understand the organization of the website.  Finally, a website should also include links to other sites, because it establishes trustworthiness, and links are more relevant from and to websites with similar topics.</p>
         
         <h2>What constitutes good heading hierarchy?  Include an example with more than one heading tag.</h2>
-        <p></p>
+        <p>Headings and subheadings typically go in order starting from h1, then to h2, h3, and so on.  Website writers should start with one h1 tag per page, then use subheadings for subsections to create hierarchy.  For example, a typical page on my wiki site (nfsmodding.com) uses an h1 tag for the title, h2 tags to separate main sections on a page, and then h3 (and so on) for organized information within a section.  <a href="https://nfsmodding.com/index.php/Need_For_Speed:_Hot_Pursuit_2/Car_Modding">This wiki page</a> is one that demonstrates this.</p>
     </main>
+    
+    <footer>
+        <p>This website is created for CMST386.</p>
+        <p>AJ Ellis, 2024</p>
+    </footer>
 </body>
  
 </html>

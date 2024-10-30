@@ -1,16 +1,95 @@
 body {
-    background-color: dimgray;
+    background-color: gray;
     font-family: sans-serif;
+    outline-style: solid;
+    outline-width: thick;
+    outline-color: silver;
+    padding: 10px;
+    margin: 5px;
 }
 
 header {
     background-color: silver;
+    margin: inherit;
+    padding: inherit;
 }
+
 
 nav {
     
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgrey;
+}
+
+nav ul li {
+    float: left;
+    border-right: 2px solid grey;
+    min-width: 100px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: black;
+}
+
+.active {
+    background-color: midnightblue
+}
+
+.dropdown {
+    display: inline-block;
+     
+}
+
+.dropdown-list {
+    position: absolute;
+    background-color: dimgrey;
+    display:none;
+    min-width: inherit;
+}
+
+.dropdown:hover .dropdown-list {
+    display:block;
+}
+
 main {
-    
+    background-color: silver;
+    padding: inherit;
+    margin: inherit;
+}
+
+footer {
+    background-color: dimgrey;
+    color: white;
+    margin: inherit;
+    padding: inherit;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+figcaption {
+    font-size: small;
 }
