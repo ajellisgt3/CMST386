@@ -1,0 +1,158 @@
+// Variables
+@padding-main: 10px;
+@padding-narrow: 5px;
+@margin-main: 10px;
+@margin-narrow: 5px;
+@font: sans-serif;
+
+// Variables - Color palette
+@color-body: gray;
+@color-main: silver;
+@color-highlight: dimgrey;
+@color-hover: black;
+@color-active: midnightblue;
+@color-text: white;
+@color-text-body: black;
+@color-link: blue;
+
+
+body {
+  padding: @padding-main;
+  margin: @margin-narrow;
+  background-color: @color-body;
+  font-family: @font;
+  outline-style: solid;
+  outline-width: thick;
+  outline-color: silver;
+  
+  header {
+    background-color: @color-main;
+    margin: inherit;
+    padding: inherit;
+  }
+}
+
+nav {
+  margin: @margin-narrow;
+  background-color: @color-highlight;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  
+  img:hover {
+    filter: invert(1);
+  }
+  
+  a {
+    color: @color-text;
+    padding: @padding-main 25px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: @color-hover;
+    }
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.hidden-list {
+  background-color: @color-highlight;
+  position: relative;
+  min-width: 100px;
+  display: none;
+}
+
+.show {display:block;}
+
+.breadcrumb {
+  padding: @padding-main 16px;
+  list-style: none;
+  display: inline;
+  
+  li {
+    display: inline;
+  }
+  
+  a {
+    color: @color-link;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  li+li:before {
+    color: @color-text-body;
+    padding: 8px;
+    content: ">\00a0";
+  }
+}
+
+.button {
+  margin: @margin-main;
+  padding: @padding-main 16px;
+  filter: drop-shadow(2px 2px 2px black);
+  color: @color-text-body; 
+  border-radius: 16px;
+  display: inline-block;
+  cursor: pointer;
+  background-image: radial-gradient(white, blue);
+  width: auto;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+  
+  &:active {
+    filter: drop-shadow(2px 2px 2px blue);
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 33% 67%;
+  
+  article {
+    padding: 20px @padding-main;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Phones only (overrides "tablets and phones" below) */
+  .button {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .breadcrumb {
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablets and phones */
+  section {
+    /* Removes columns */
+    display: block;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}

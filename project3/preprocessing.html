@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>AJ Ellis - CMST 386 Project 3: Preprocessing</title>
+    <link rel="stylesheet" href="../project1/css/styles.css">
+    <link rel="stylesheet" href="css/project3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira">
+    <style>
+        section {
+            font-family: "Saira", sans-serif; 
+        }
+    </style>
+    <!-- link rel="stylesheet/less" type="text/css" href="css/project3.less" /-->
+    <!-- script src="less.js" type="text/javascript"></script-->
+    <!-- My implementation of LESS:
+         I used WinLess (https://winless.org/) to automatically test and compile my LESS code to CSS, which I pasted into project3.css linked above.
+         I did it this way so that I didn't have to worry about compiling my own less.js file.  If I were to, then I would uncomment the script and the less stylesheet above,
+         and the script would load project3.less and convert it to project3.css, client-side.
+         I found LESS to be the most useful with variables and nesting.  Variables allowed me to store common values in one place so that I could reference them and easily change one value rather than several.
+         And nesting greatly simplified coding and improved organization, making it easier to read, understand, and edit.
+    -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="CMST 386, AJ Ellis, Project 3, Preprocessing">
+    <meta name="description" content="The preprocessing page for AJ Ellis's CMST 386 Project 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function menuDrop() {
+            document.getElementById("hiddenList").classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body id="anchor">
+    <header>
+        <h1>CMST 386 - AJ Ellis - Project 3: Preprocessing</h1>
+    </header>
+    
+    <nav>
+        <img onclick="menuDrop();" src="images/list.svg" height=34.5px  class="clickable"> <!-- Image source: https://icons.getbootstrap.com/icons/list/ -->
+        <div id="hiddenList" class="hidden-list">
+            <a href="../index.html">Home</a>
+            <a href="../project1/project1.html">Project 1</a>
+            <a href="project3.html" class="active">Project 3</a>
+        </div>            
+    </nav>
+    
+    <main>
+        
+        <ul class="breadcrumb">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+            <li><a href="preprocessing.html">Preprocessing</a></li>
+        </ul>
+        
+        <section>
+            <article>
+                <h2>Explain the ways to implement preprocessing (client-side vs server-side).</h2>
+                <p>Implementation of preprocessing requires a way to “process” the code into css readable by the browser.  This processing can be done in two ways: either on the server itself (before the website is served to the user) or via the client’s browser (as the website is loaded by the user).  In the case of using LESS, it can be done server-side by installing LESS on the server hosting the website, or it can be done client-side by including the less.js file with the website and linking it in the HTML.  In the first case, the code is converted to CSS before it is loaded in the user’s browser; in the second, it is converted to CSS while it is loaded.  Server-side can of course speed up page loading, but it also puts more load on the server.</p>
+            </article>
+        
+            <article>
+                <h2>Define and describe the mechanisms used in either LESS or SASS: mixins, variables, functions, operators, nested variables.</h2>
+                <p>
+                            Preprocessors like LESS and SASS come with a variety of features that extend CSS capabilities.
+                    <br><br>The first is mixins, which simplify CSS coding by including a block of CSS properties in another block.  So, if a class is defined to have certain CSS properties, that class can be “mixed in” by adding it to whatever CSS ruleset is intended to use those properties, rather than writing the same code multiple times.
+                    <br><br>Next, variables also save the user from duplicate code by storing values in one place to be used in multiple locations.  Rather than writing the same value over and over (and, if it must be changed, then changing each individual value), the value can be assigned to a variable which is then used in its place.  If it is changed, it only needs to be edited from the variable declaration rather than everywhere it is used (because the variable is called in all those places instead).
+                    <br><br>Functions are provided by LESS to perform specific tasks, often based in parameters input.  One example is the if function, which can be used to set a certain value based on a certain condition.
+                    <br><br>Operators can be used to perform basic mathematical tasks like addition, subtraction, multiplication, or division.
+                    <br><br>Finally, nesting is useful because it enables CSS blocks to be declared inside other CSS blocks, which is more concise.
+                </p>
+                <a href="#anchor">Back to top of page</a>
+            </article>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>This website is created for CMST386.</p>
+        <p>AJ Ellis, 2024</p>
+    </footer>
+</body>
+
+
+</html>

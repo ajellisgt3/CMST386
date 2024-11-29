@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>AJ Ellis - CMST 386 Project 3</title>
+    <link rel="stylesheet" href="../project1/css/styles.css">
+    <link rel="stylesheet" href="css/project3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira">
+    <style>
+        section {
+            font-family: "Saira", sans-serif; 
+        }
+    </style>
+    <!-- link rel="stylesheet/less" type="text/css" href="css/project3.less" /-->
+    <!-- script src="less.js" type="text/javascript"></script-->
+    <!-- My implementation of LESS:
+         I used WinLess (https://winless.org/) to automatically test and compile my LESS code to CSS, which I pasted into project3.css linked above.
+         I did it this way so that I didn't have to worry about compiling my own less.js file.  If I were to, then I would uncomment the script and the less stylesheet above,
+         and the script would load project3.less and convert it to project3.css, client-side.
+         I found LESS to be the most useful with variables and nesting.  Variables allowed me to store common values in one place so that I could reference them and easily change one value rather than several.
+         And nesting greatly simplified coding and improved organization, making it easier to read, understand, and edit.
+    -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="CMST 386, AJ Ellis, Project 3">
+    <meta name="description" content="The main page for AJ Ellis's CMST 386 Project 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function menuDrop() {
+            document.getElementById("hiddenList").classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>CMST 386 - AJ Ellis - Project 3</h1>
+    </header>
+    
+    <nav>
+        <img onclick="menuDrop();" src="images/list.svg" height=34.5px  class="clickable"> <!-- Image source: https://icons.getbootstrap.com/icons/list/ -->
+        <div id="hiddenList" class="hidden-list">
+            <a href="../index.html">Home</a>
+            <a href="../project1/project1.html">Project 1</a>
+            <a href="project3.html" class="active">Project 3</a>
+        </div>            
+    </nav>
+    
+    <main>
+        
+        <ul class="breadcrumb">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+        </ul>
+        
+        <br><a href="preprocessing.html" class="button">Learn Preprocessing</a>
+        
+        <section>
+            <article>
+                <h2>Explain the importance of responsive design and its impact on the target audience.</h2>
+                <p>Responsive design is an essential consideration for modern websites to display properly on modern devices and thus be properly usable to the target audience.  A responsive website means that its size/layout changes automatically based on the size of the screen displaying it,  which is important, considering the wide variation in screen sizes used to browse the internet.</p>
+                <p>A website designed for a 1920x1080 monitor will display poorly on a phone unless it automatically scales itself to be more easily usable on the phone.  Otherwise, potential users could be lost if they find it too difficult to navigate on their preferred device.</p>
+            </article>
+            
+            <article>
+                <h2>
+                    Google Analytics provides a wealth of data for free to help assess the success of websites.
+                    Describe three different kinds of reports that will tell you what information your target audience is accessing.
+                </h2>
+                <p>
+                    According to the <a href=https://marketingplatform.google.com/about/analytics/ target="_blank">Google Analytics home page</a>, there are three useful and free reports provided by Google Analytics: Acquisition Reports, Engagement Reports, and Monetization Reports.
+                </p>
+                <p>
+                    Acquisition Reports show how users are discovering the website.  It shows what sources (such as links on other websites) lead users to the current website.  This is useful for marketing because it shows how much of the traffic is organic and how much is from paid sources.
+                </p>
+                <p>
+                    Next, Engagement Reports show how users interact with the website.  That includes showing which pages users are on the most and what content on the website drives monetary conversions (such as users following affiliate marketing links from your site).
+                </p>
+                <p>
+                    Finally, Monetization Reports show how much revenue the website is generating and from what sources, including ads, affiliate links, and user purchase activity.
+                </p>
+            </article>
+        </section>    
+        
+    </main>
+    
+    <footer>
+        <p>This website is created for CMST386.</p>
+        <p>AJ Ellis, 2024</p>
+    </footer>
+</body>
+
+
+</html>

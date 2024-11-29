@@ -1,0 +1,120 @@
+body {
+  padding: 10px;
+  margin: 5px;
+  background-color: #808080;
+  font-family: sans-serif;
+  outline-style: solid;
+  outline-width: thick;
+  outline-color: silver;
+}
+body header {
+  background-color: #c0c0c0;
+  margin: inherit;
+  padding: inherit;
+}
+nav {
+  margin: 5px;
+  background-color: #696969;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+nav img:hover {
+  filter: invert(1);
+}
+nav a {
+  color: #ffffff;
+  padding: 10px 25px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #000000;
+}
+.clickable {
+  cursor: pointer;
+}
+.hidden-list {
+  background-color: #696969;
+  position: relative;
+  min-width: 100px;
+  display: none;
+}
+.show {
+  display: block;
+}
+.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  display: inline;
+}
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb a {
+  color: #0000ff;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb li + li:before {
+  color: #000000;
+  padding: 8px;
+  content: ">\00a0";
+}
+.button {
+  margin: 10px;
+  padding: 10px 16px;
+  filter: drop-shadow(2px 2px 2px #000000);
+  color: #000000;
+  border-radius: 16px;
+  display: inline-block;
+  cursor: pointer;
+  background-image: radial-gradient(#ffffff, #0000ff);
+  width: auto;
+  text-decoration: none;
+}
+.button:hover {
+  text-decoration: underline;
+}
+.button:active {
+  filter: drop-shadow(2px 2px 2px #0000ff);
+}
+section {
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+section article {
+  padding: 20px 10px;
+}
+@media only screen and (max-width: 600px) {
+  /* Phones only (overrides "tablets and phones" below) */
+  .button {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+  }
+  .breadcrumb {
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* Tablets and phones */
+  section {
+    /* Removes columns */
+    display: block;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
