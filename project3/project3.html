@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/project3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira">
     <style>
-        section {
+        .section {
             font-family: "Saira", sans-serif; 
         }
     </style>
@@ -37,7 +37,7 @@
     </header>
     
     <nav>
-        <img onclick="menuDrop();" src="images/list.svg" height=34.5px  class="clickable"> <!-- Image source: https://icons.getbootstrap.com/icons/list/ -->
+        <img onclick="menuDrop();" src="images/list.svg" height=34px  class="clickable" alt="hamburger menu button icon"> <!-- Image source: https://icons.getbootstrap.com/icons/list/ -->
         <div id="hiddenList" class="hidden-list">
             <a href="../index.html">Home</a>
             <a href="../project1/project1.html">Project 1</a>
@@ -54,7 +54,7 @@
         
         <br><a href="preprocessing.html" class="button">Learn Preprocessing</a>
         
-        <section>
+        <div class="section"> <!-- I wanted to use a section element here, but the validator produced a warning because I didn't have any h2-h6 elements directly under it. -->
             <article>
                 <h2>Explain the importance of responsive design and its impact on the target audience.</h2>
                 <p>Responsive design is an essential consideration for modern websites to display properly on modern devices and thus be properly usable to the target audience.  A responsive website means that its size/layout changes automatically based on the size of the screen displaying it,  which is important, considering the wide variation in screen sizes used to browse the internet.</p>
@@ -79,7 +79,7 @@
                     Finally, Monetization Reports show how much revenue the website is generating and from what sources, including ads, affiliate links, and user purchase activity.
                 </p>
             </article>
-        </section>    
+        </div>    
         
     </main>
     

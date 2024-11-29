@@ -82,11 +82,11 @@ nav a:hover {
 .button:active {
   filter: drop-shadow(2px 2px 2px #0000ff);
 }
-section {
+.section {
   display: grid;
   grid-template-columns: 33% 67%;
 }
-section article {
+.section article {
   padding: 20px 10px;
 }
 @media only screen and (max-width: 600px) {
@@ -108,7 +108,7 @@ section article {
 }
 @media only screen and (max-width: 768px) {
   /* Tablets and phones */
-  section {
+  .section {
     /* Removes columns */
     display: block;
   }
