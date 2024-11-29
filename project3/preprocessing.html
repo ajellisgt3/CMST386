@@ -37,7 +37,7 @@
     </header>
     
     <nav>
-        <img onclick="menuDrop();" src="images/list.svg" height=34px  class="clickable" alt="hamburger menu button icon"> <!-- Image source: https://icons.getbootstrap.com/icons/list/ -->
+        <img onclick="menuDrop();" src="images/list.svg" height="34"  class="clickable" alt="hamburger menu button icon"> <!-- Image source: https://icons.getbootstrap.com/icons/list/ -->
         <div id="hiddenList" class="hidden-list">
             <a href="../index.html">Home</a>
             <a href="../project1/project1.html">Project 1</a>
@@ -53,7 +53,7 @@
             <li><a href="preprocessing.html">Preprocessing</a></li>
         </ul>
         
-        <div class="section"div> <!-- I wanted to use a section element here, but the validator produced a warning because I didn't have any h2-h6 elements directly under it. -->
+        <div class="section"> <!-- I wanted to use a section element here, but the validator produced a warning because I didn't have any h2-h6 elements directly under it. -->
             <article>
                 <h2>Explain the ways to implement preprocessing (client-side vs server-side).</h2>
                 <p>Implementation of preprocessing requires a way to “process” the code into css readable by the browser.  This processing can be done in two ways: either on the server itself (before the website is served to the user) or via the client’s browser (as the website is loaded by the user).  In the case of using LESS, it can be done server-side by installing LESS on the server hosting the website, or it can be done client-side by including the less.js file with the website and linking it in the HTML.  In the first case, the code is converted to CSS before it is loaded in the user’s browser; in the second, it is converted to CSS while it is loaded.  Server-side can of course speed up page loading, but it also puts more load on the server.</p>
