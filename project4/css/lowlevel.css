@@ -1,0 +1,86 @@
+body {
+    /*color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../imgs/hdcars.jpg");
+    background-position: bottom;
+    /*backdrop-filter: blur(10px);
+    max-width: none;*/
+    background: none;
+    background-color: silver;
+    color: black;
+}
+
+header {
+    margin: 20px auto auto auto;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../imgs/944render.jpg");
+    background-position: center;
+    max-width: 1600px;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    margin: 20px auto auto auto;
+    max-width: 1560px;
+    background-color: rgba(0,0,0,0.35);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.back {
+    text-align: center;
+}
+
+.back a {
+    color: black;
+}
+
+article {
+    max-width: 60%;
+    margin: auto;
+    font-size: large;
+}
+
+.featured-img {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
+section a {
+    margin: 20px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: auto;
+    }
+}

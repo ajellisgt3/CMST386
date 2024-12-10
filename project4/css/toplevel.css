@@ -1,0 +1,46 @@
+body {
+    /*color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../imgs/hdcars.jpg");
+    background-position: bottom;
+    /*backdrop-filter: blur(10px);
+    max-width: none;*/
+    background: none;
+    background-color: silver;
+    color: black;
+}
+
+header {
+    margin: 20px auto auto auto;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../imgs/944render.jpg");
+    background-position: center;
+    max-width: 1600px;
+}
+
+main {
+    margin: 20px auto auto auto;
+    max-width: 1560px;
+    background-color: rgba(0,0,0,0.35);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+input[type=text], textarea, select {
+    width: 50%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid dimgrey;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid dimgrey;
+}
+
+input[type=submit]:hover {
+    background-color: lightgrey;
+}

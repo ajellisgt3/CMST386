@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="AJ Ellis, contact">
+    <meta name="description" content="The contact page for AJ Ellis's portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AJ Ellis's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/toplevel.css">
+    <script>
+        function formValidate() {
+            let x = document.forms.contactForm.message.value;
+            if (x == "") {
+                alert("Please enter a message");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    
+    <!--div class="background">test</div-->
+    
+    
+    <header>
+        <figure>
+            <img src="imgs/profile.jpg" alt="AJ Ellis's profile photo" id="profile-pic">
+        </figure>
+        
+        <div>
+            <h1>AJ Ellis</h1>
+            <p>Software, website, and game developer</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Contact</h2>
+        <p>Want to get in touch with me?
+        <br><br>Feel free to fill out this form, or e-mail me directly at <a href="mailto:ajellisracing@gmail.com">ajellisracing@gmail.com</a>.</p>
+        <br>
+        <form name="contactForm" action="mailto:ajellisracing@gmail.com" onsubmit="return formValidate();">
+            <label for="name" name="name">Name:</label>
+            <br><input type="text" placeholder="Enter your name here" required>
+            
+            <br><label for="email" name="email">Email address:</label>
+            <br><input type="text" placeholder="Enter your email address here" required>
+            
+            <br><label for="message" name="message">Message:</label>
+            <br><textarea name="message" rows="10" cols="30"></textarea>
+            
+            <br><label for="type">Select inquiry type:</label>
+            <br><select id="type">
+                <option value="job">Job opportunity</option>
+                <option value="game">Game/Mod collaboration invite</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <br><br><label for="category">For which category does this apply?</label>
+            <br><input type="radio" id="radio1"><label for="radio1">Game Development/Modding</label>
+            <br><input type="radio" id="radio2"><label for="radio2">Web Design</label>
+            <br><input type="radio" id="radio3"><label for="radio3">Software Development</label>
+            <br><input type="radio" id="radio4"><label for="radio4">Other</label>
+            
+            <br><br><label for="portfolio">Does this relate to a specific portfolio work?</label>
+            <br><input type="checkbox" id="check1"><label for="check1">AMX3</label>
+            <br><input type="checkbox" id="check2"><label for="check2">944 "Unleashed"</label>
+            <br><input type="checkbox" id="check3"><label for="check3">Carrera GT</label>
+            <br><input type="checkbox" id="check4"><label for="check4">Elise</label>
+            <br><input type="checkbox" id="check5"><label for="check5">944 (NFS PU)</label>
+            <br><input type="checkbox" id="check6"><label for="check6">HD Car Overhaul</label>
+            
+            <br><br><input type="submit">
+        </form>
+    </main>
+    
+</body>
+
+<footer>
+    <p>AJ Ellis, 2024</p>
+    <p><a href="privacy-policy.html">Privacy policy</a></p>
+    <p id="date"></p>
+    <script>
+        document.getElementById("date").innerHTML = new Date();
+    </script>
+</footer>
+
+</html>

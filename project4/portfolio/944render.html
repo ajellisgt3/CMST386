@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="AJ Ellis, portfolio, Porsche, 944, Unleashed">
+    <meta name="description" content="A 3D render of a Porsche 944 inside the garage from Need for Speed: Porsche Unleashed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AJ Ellis's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/lowlevel.css">
+</head>
+
+<body>
+    
+    
+    <header>
+        <figure>
+            <img src="../imgs/profile.jpg" alt="AJ Ellis's profile photo" id="profile-pic">
+        </figure>
+        
+        <div>
+            <h1>AJ Ellis</h1>
+            <p>Software, website, and game developer</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <p class="back"><a href="../portfolio.html">Back to portfolio overview</a></p>
+        
+        <h2>Porsche 944 "Unleashed"</h2>
+        
+        <a target="_blank" href="../imgs/944render.jpg">
+            <img src="../imgs/944render.jpg" alt="3D render of a Porsche 944 Turbo in the garage from Need for Speed: Porsche Unleashed" class="featured-img">
+        </a>
+        
+        <article>
+            <p>
+            This is a modern adaptation of the main menu environment from Need for Speed: Porsche Unleashed.
+            <br><br>The car model is heavily modified and pieced from various source models. Most of my work went into modeling the front and rear fenders, front bumper, and front nose.
+            I also overhauled the gaps between body panels to replicate the art style of late BlackBox-era Need for Speed games (ProStreet/Undercover), in which I intended to use this model as a mod.
+            It is derived from my 924 project, since both cars are based on the same platform.
+            
+            <br><br>Model sources include:
+            <ul>
+                <li>Forza Motorsport 7 - Porsche 924 Carrera GT (base model, better proportion accuracy than Forza's 944 model)</li>
+                <li>Forza Motorsport 4 - Porsche 944 Turbo (door handle, mirrors, front bumper. All heavily edited to fit this model).</li>
+                <li>NFSMW Mod - wheel model (heavily edited by me), fog lights/turn signal textures</li>
+                <li>NFS ProStreet - Tire textures</li>
+            </ul>
+            The environment model was ripped from NFS Porsche Unleashed, with lights placed in Blender.
+            <br> This car modeling project is still very much a work in progress.    
+            </p>
+        </article>
+        
+    </main>
+    
+</body>
+
+<footer>
+    <p>AJ Ellis, 2024</p>
+    <p><a href="../privacy-policy.html">Privacy policy</a></p>
+    <p id="date"></p>
+    <script>
+        document.getElementById("date").innerHTML = new Date();
+    </script>
+</footer>
+
+</html>

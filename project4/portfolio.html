@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="AJ Ellis, portfolio">
+    <meta name="description" content="The portfolio page for AJ Ellis's portfolio website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AJ Ellis's Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/toplevel.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+    
+    <!--div class="background">test</div-->
+    
+    
+    <header>
+        <figure>
+            <img src="imgs/profile.jpg" alt="AJ Ellis's profile photo" id="profile-pic">
+        </figure>
+        
+        <div>
+            <h1>AJ Ellis</h1>
+            <p>Software, website, and game developer</p>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Portfolio</h2>
+        <section>
+            
+            <a href="portfolio/amx3.html">
+                <figure>
+                    <img src="imgs/AMX3/amx3_thumb.jpg" alt="Scratch-made 3D model of an AMC AMX 3">
+                    <figcaption><strong>AMC AMX3</strong><br><i>First scratch-made 3D car model</i></figcaption>
+                </figure> 
+            </a>
+            <a href="portfolio/944render.html">
+                <figure>
+                    <img src="imgs/944render.jpg" alt="3D render of a Porsche 944 Turbo in the garage from the game Need for Speed Porsche Unleashed">
+                    <figcaption><strong>Porsche 944 Turbo "Unleashed"</strong><br><i>3D Render</i></figcaption>
+                </figure>
+            </a>
+            <a href="portfolio/carreragt.html">
+                <figure>
+                    <img src="imgs/carreragt/carreragt_thumb.jpg" alt="Porsche Carrera GT mod in Need for Speed Carbon">
+                    <figcaption><strong>Porsche Carrera GT Model Fix</strong><br><i>Need for Speed: Most Wanted/Carbon</i></figcaption>
+                </figure>
+            </a>
+            <a href="portfolio/elise.html" alt="In-game screenshot of the overhauled Lotus Elise Model in Need for Speed: Hot Pursuit 2">
+                <figure>
+                    <img src="imgs/elise/elise_thumb.jpg">
+                    <figcaption><strong>Lotus Elise (medium-poly) Model Update</strong><br><i>Need for Speed: Hot Pursuit 2</i></figcaption>
+                </figure>
+            </a>
+            <a href="portfolio/944_nfspu.html">
+                <figure>
+                    <img src="imgs/944_nfspu/944_thumb.jpg">
+                    <figcaption><strong>Porsche 944 (low-poly) Model Update</strong><br><i>Need for Speed: Porsche Unleashed</i></figcaption>
+                </figure>
+            </a>
+            <a href="portfolio/nfsmw_hdcars.html">
+                <figure>
+                    <img src="imgs/nfsmw_hdcars/nfsmw_hdcars_thumb.jpg">
+                    <figcaption><strong>HD Car Model Overhaul</strong><br><i>Need for Speed: Most Wanted</i></figcaption>
+                </figure>
+            </a>
+            
+        </section>
+        
+    </main>
+    
+</body>
+
+<footer>
+    <p>AJ Ellis, 2024</p>
+    <p><a href="privacy-policy.html">Privacy policy</a></p>
+    <p id="date"></p>
+    <script>
+        document.getElementById("date").innerHTML = new Date();
+    </script>
+</footer>
+
+</html>

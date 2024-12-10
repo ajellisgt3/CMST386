@@ -1,0 +1,84 @@
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+body {
+    max-width: 1600px;
+    min-height: 1270px;
+    /*text-align: center;*/
+    margin: auto;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url("../imgs/944render.jpg");
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 50px 0;
+    margin: 200px auto;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+}
+
+header div {
+    margin: auto auto;
+}
+
+nav {
+    margin: auto auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    max-width: 150px;
+    margin: 1px auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 150%;
+    
+    
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+.active {
+    color: maroon;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px 0px;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: block;
+    }
+}
+
